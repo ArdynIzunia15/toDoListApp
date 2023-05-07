@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailTaskActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/taskTitle"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Task Title" />
+
+        <ImageView
+            android:id="@+id/taskDeadlineIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/taskTitle"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/baseline_calendar_month_24" />
+
+        <TextView
+            android:id="@+id/taskDeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskTitle"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/taskDeadlineIcon"
+            android:text="28 December 2022" />
+
+        <ImageView
+            android:id="@+id/taskDescriptionIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/taskDeadlineIcon"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/baseline_chat_24" />
+
+        <TextView
+            android:id="@+id/taskDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskDeadlineIcon"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/taskDescriptionIcon"
+            android:text="Descriptions" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

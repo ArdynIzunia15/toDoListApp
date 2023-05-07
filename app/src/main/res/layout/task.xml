@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        app:strokeColor="#ffffff"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardBackgroundColor="@color/white">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/taskTitle"
+                android:text="Task Title"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/taskDeadlineIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/taskTitle"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/baseline_calendar_month_24"/>
+            <TextView
+                android:id="@+id/taskDeadline"
+                android:text="28 December 2022"
+                android:layout_toRightOf="@+id/taskDeadlineIcon"
+                android:layout_below="@+id/taskTitle"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

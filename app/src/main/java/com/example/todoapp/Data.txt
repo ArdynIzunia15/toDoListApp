@@ -1,0 +1,5 @@
+UTS Resmet#Selesain paper + acc dosen#true#02 May 2023
+UTS Software Engineering#Ngerjain soal#false#03 May 2023
+UTS Computational Biology#Ngerjain soal + Cari database NCBI#true#04 May 2023
+UTS Mulmet Mixed Reality#Ngerjain soal + Studi kasus#true#05 May 2023
+UTS Mobile Programming#Ngerjain soal + buat program#true#06 May 2023
